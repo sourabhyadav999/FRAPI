@@ -1,0 +1,11 @@
+beautifulsoup4==4.8.0
+Flask==1.1.1
+Flask-Cors==3.0.8
+ftfy==5.7
+jsonschema==3.0.2
+Keras==2.3.1
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.0
+numpy==1.18.4
+oauthlib==3.1.0
+uwsgi

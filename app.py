@@ -18,10 +18,7 @@ from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 
 
-app = Flask(__name__)
-cors = CORS(app)
 
-app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 
@@ -106,9 +103,12 @@ def create_model():
 
 
 
+app = Flask(__name__)
+cors = CORS(app)
 
+app.config['CORS_HEADERS'] = 'Content-Type'
 
-@app.route('/')
+@app.route('/a')
 @cross_origin()
 def home():
     return jsonify({ "prediction" : "online" })

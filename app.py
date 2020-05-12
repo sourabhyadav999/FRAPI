@@ -27,16 +27,10 @@ rep = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','
        'v','w','x','y','z','A','B','B','D','E','F','G','H','I','J','K','L','M','N','O','P',
        'Q','R','S','T','U','V','W','X','Y','Z','!','@','#','$','%','&',',','?']
 def clean_text(s):
-    st=ftfy.fix_text(s)
-    for s in rep:
-        rs = s+s
-        try:
-            st = re.sub(rs+'+',rs,st)
-        except:
-            continue
+   
             
     
-    text = text.lower()
+    text = s.lower()
     text = re.sub('["]',' ',text)
     text = re.sub('[|]',' ',text)
     text = re.sub('[-]',' ',text)

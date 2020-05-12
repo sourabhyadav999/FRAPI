@@ -13,7 +13,7 @@ import numpy as np
 import re
 import string
 import ftfy
-import BeautifulSoup
+
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 
@@ -35,8 +35,7 @@ def clean_text(s):
         except:
             continue
             
-    text = BeautifulSoup(st, 'lxml')
-    text = text.get_text()
+    
     text = text.lower()
     text = re.sub('["]',' ',text)
     text = re.sub('[|]',' ',text)

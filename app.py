@@ -13,7 +13,7 @@ import numpy as np
 import re
 import string
 import ftfy
-from bs4 import BeautifulSoup
+import BeautifulSoup
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 

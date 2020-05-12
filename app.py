@@ -108,7 +108,7 @@ def create_model():
 
 
 
-@app.route('/a',methods=['POST'])
+@app.route('/')
 @cross_origin()
 def home():
     return jsonify({ "prediction" : "online" })

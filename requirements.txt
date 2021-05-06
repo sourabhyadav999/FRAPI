@@ -1,6 +1,6 @@
 beautifulsoup4==4.8.0
 Flask==1.1.1
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 ftfy==5.7
 jsonschema==3.0.2
 Keras==2.3.1
